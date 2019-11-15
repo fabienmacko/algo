@@ -1,0 +1,1 @@
+const pigIt = str => str.split(" ").map((w) => w.match(/[A-Za-z]/) ? w.substr(1) + w[0] + "ay" : w).join(" ");
