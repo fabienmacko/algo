@@ -1,1 +1,1 @@
-const infected = (s) =>s.includes("1") ? s.split("X").map(e => e.includes("1") ? e.replace(/0/g, "1") : "0").filter((e) => e.includes("1")).join("").split("").length * 100 / s.split("X").join("").length : 0;
+const infected = s =>s.includes("1") ? s.split("X").map(e => e.includes("1") ? e.replace(/0/g, "1") : "0").filter((e) => e.includes("1")).join("").split("").length * 100 / s.split("X").join("").length : 0;
