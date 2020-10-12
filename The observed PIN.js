@@ -86,22 +86,18 @@ function getPINs(observed) {
   var allCombinaisons = [];
 
   // For each number possibilities
-  for (let i2 = 0; i2 < allPossibilitesForEachNumber.length - 1; i2++) {
-    // for each of these possibilites
-    for (let i3 = 0; i3 < allPossibilitesForEachNumber[i2].length; i3++) {
-
-      const possibility = allPossibilitesForEachNumber[i2][i3];
-
-     // Get and add the next possibility
-     for (let i4 = 0; i4 < allPossibilitesForEachNumber[i2 + 1].length; i4++) {
-       const nextPossibility = allPossibilitesForEachNumber[i2 + 1][i4];
-
-       allCombinaisons.push(possibility + nextPossibility);
-     }
+  for (let i = 0; i < allPossibilitesForEachNumber.length; i++) {
+    
+    for (let i2 = 0; i2 < allPossibilitesForEachNumber[i].length; i2++) {
+      const element = allPossibilitesForEachNumber[i2];
+      
     }
+   
   }
 
 
+
   return allCombinaisons.filter((e) => e != 'x' && e != undefined);
+
+
 }
-// ["5", "7", "8", "9", "0"]
